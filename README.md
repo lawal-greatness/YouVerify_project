@@ -11,7 +11,9 @@ Keypair for ssh
 Jenkins server
 SonarQube server
 
-The CI/CD tools used is jenkins and nodejs was installed on it to create a pipeline for the deployment of the app on the app repo.
+The CI/CD tools used is jenkins and nodejs was installed on it to create a pipeline for the deployment of the app on the app repo, it builds the NODEJS app from the app repo. It was directly deployed on an instances and was NOT as a container
 Newrelic is install on jenkins server to monitor the instances running on the pipeline
 
-SOnarqube is also installed on an ubuntu server to analys the codes
+SOnarqube is also installed on an ubuntu server to analys the codes by webhooking
+
+The jenkins file also contains the pipeline code for CI/CD
